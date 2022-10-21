@@ -1,7 +1,8 @@
-name: "maven build"
-
+name: CI
 on:
-  push
+  pull_request:
+    branches:
+      - main
 
 jobs:
   test-maven-build:
